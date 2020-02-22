@@ -9,4 +9,4 @@ G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobi
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\ExamManagerMobile.AssemblyInfo.cs
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\ExamManagerMobile.dll
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\ExamManagerMobile.pdb
-G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\XamlC.stamp
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\ExamManagerMobile.csprojAssemblyReference.cache

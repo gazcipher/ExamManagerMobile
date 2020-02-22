@@ -30,13 +30,18 @@ namespace ExamManagerMobile.Views
             entry_Username.Completed += (s, e) => entry_Password.Focus();
             entry_Password.Completed += (s, e) => LoginProcessing(s,e);
         }
-        void LoginProcessing(object sender, EventArgs e)
+        async void LoginProcessing(object sender, EventArgs e)
         {
             User user = new User(entry_Username.Text, entry_Password.Text);
             if(user.CheckIfValidCreds())
             {
                 DisplayAlert("Login", "Login Succeeded", "Okay");
-                App.UserDatabase.CommitUser(user);
+                //Login function should get back a token and the token can be saved using the token db controller
+                var result = await App.RestService.Login(user);
+                if(result.access_token != null)
+                {
+                    App.UserDatabase.CommitUser(user);
+                }
             }
             else
             {

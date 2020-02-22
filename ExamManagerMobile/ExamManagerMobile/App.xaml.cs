@@ -11,6 +11,7 @@ namespace ExamManagerMobile
     {
         static TokenDBController _tokenDatabase;
         static UserDBController _userDatabase;
+        static RestService restService; //Injecting the rest service into the app
         public App()
         {
             InitializeComponent();
@@ -54,6 +55,19 @@ namespace ExamManagerMobile
                     _tokenDatabase = new TokenDBController();
                 }
                 return _tokenDatabase;
+            }
+        }
+
+        //=========================Making Internet Connectin=================================
+        public static RestService RestService
+        {
+            get
+            {
+                if(restService == null)
+                {
+                    restService = new RestService();
+                }
+                return restService;
             }
         }
 
