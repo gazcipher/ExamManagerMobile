@@ -4,6 +4,7 @@ G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobi
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\android\assets\Java.Interop.dll
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\android\assets\Mono.Android.dll
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\android\assets\mscorlib.dll
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\android\assets\SQLite-net.dll
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_green.dll
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_v2.dll

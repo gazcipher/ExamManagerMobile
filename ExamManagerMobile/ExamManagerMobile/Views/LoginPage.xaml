@@ -6,7 +6,8 @@
     <StackLayout x:Name="MasterLayout">
         
         <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand">
-            <Image x:Name="LoginIcon" Source="ball.png" Margin="0,80,0,0"/>
+            <Label x:Name="lbl_NoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red"/>
+            <Image x:Name="LoginIcon" Source="ExamManager.png" Margin="0,100,0,0"/>
         </StackLayout>
    <!-- <ContentPage.Content>-->
             <StackLayout x:Name="LoginEntriesStack" VerticalOptions="StartAndExpand">
@@ -23,8 +24,8 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />-->
 
-                <Label x:Name="lbl_Username" Text="UserName"/>
-                <Entry x:Name="entry_Username" Placeholder="Username or Email"/>
+                <Label x:Name="lbl_Username" Text="Email Address"/>
+                <Entry x:Name="entry_Username" Placeholder="Email"/>
                 <Label x:Name="lbl_Password" Text="Password" />
                 <Entry x:Name="entry_Password" Placeholder="Password"/>
                 <Button x:Name="btn_Login"  Text="Sign In" Clicked="LoginProcessing"/>

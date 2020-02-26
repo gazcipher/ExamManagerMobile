@@ -14,5 +14,7 @@ namespace ExamManagerMobile.Models
 
         //=======================Login URL=================================
         public static string Login_Url = "https://exam-manager-api.azurewebsites.net/api/v1/auth/signin";
+
+        public static string NoInternetText = "No Internet Connection. Check if you are connected to Wifi or Data turned on!";
     }
 }

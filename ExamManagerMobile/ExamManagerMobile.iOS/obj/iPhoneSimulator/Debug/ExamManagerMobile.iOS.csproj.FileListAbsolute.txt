@@ -1,5 +1,11 @@
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\ExamManagerMobile.iOS.exe
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\ExamManagerMobile.iOS.pdb
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
@@ -55,8 +61,4 @@ G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobi
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\obj\iPhoneSimulator\Debug\ExamManagerMobile.iOS.csproj.CopyComplete
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\obj\iPhoneSimulator\Debug\ExamManagerMobile.iOS.exe
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\obj\iPhoneSimulator\Debug\ExamManagerMobile.iOS.pdb
-G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
-G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
-G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
-G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
-G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.iOS\bin\iPhoneSimulator\Debug\ExamManagerMobile.dll.mdb

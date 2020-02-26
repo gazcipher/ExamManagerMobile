@@ -1,6 +1,9 @@
 ﻿using ExamManagerMobile.Data;
+using ExamManagerMobile.Models;
 using ExamManagerMobile.Views;
 using System;
+using System.Threading;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +15,14 @@ namespace ExamManagerMobile
         static TokenDBController _tokenDatabase;
         static UserDBController _userDatabase;
         static RestService restService; //Injecting the rest service into the app
+        private static Label labelScreen;
+        private static bool hasInternet;
+        private static Page curentPage;
+
+        //check internet every couple of seconds
+        private static Timer timer;
+        private static bool noInternetShow;
+
         public App()
         {
             InitializeComponent();
@@ -58,7 +69,7 @@ namespace ExamManagerMobile
             }
         }
 
-        //=========================Making Internet Connectin=================================
+        //=========================Making Internet Connection=================================
         public static RestService RestService
         {
             get
@@ -70,6 +81,88 @@ namespace ExamManagerMobile
                 return restService;
             }
         }
+        //=============================Ends internet Connection =============================
+
+        //===========================Check if you can get internet===========================
+        public static void StartCheckIfInternetConnection(Label label, Page page)
+        {
+            labelScreen = label;
+            label.Text = Constants.NoInternetText;
+            label.IsVisible = false;
+            hasInternet = true;
+            curentPage = page;
+
+            if(timer == null)
+            {
+                timer = new Timer((e) => {
+                    StartCheckIfInternetOverTime();
+                }, null, 10, (int)TimeSpan.FromSeconds(3).TotalMilliseconds);
+            }
+        }
+
+        private static void StartCheckIfInternetOverTime()
+        {
+            var networkConnection = DependencyService.Get<INetworkConnection>();
+            networkConnection.CheckInternetConnection();
+
+            //check if internet is disabled, change UI element
+            if(!networkConnection.IsConnected)
+            {
+                Device.BeginInvokeOnMainThread(async () => {
+                    if (hasInternet)
+                    {
+                        if (!noInternetShow)
+                        {
+                            hasInternet = false;
+                            labelScreen.IsVisible = true;
+                            await ShowDisplayAlert();
+                        }
+                    }
+                });
+            }
+            else
+            {
+                Device.BeginInvokeOnMainThread(() => {
+                    hasInternet = true;
+                    labelScreen.IsVisible = false;
+                });
+            }
+        }
+
+        //This checks for internet connection Immediately i.e before you Press a button to process important transaction
+        public static async Task<bool> CheckIfInternet()
+        {
+            var networkConnection = DependencyService.Get<INetworkConnection>();
+            networkConnection.CheckInternetConnection();
+            return networkConnection.IsConnected;
+
+        }
+
+        //=======================Check internet with Alert==============================================================
+        public static async Task<bool> CheckIfInternetWithAlertAsync()
+        {
+            var networkConnection = DependencyService.Get<INetworkConnection>();
+            networkConnection.CheckInternetConnection();
+            if (!networkConnection.IsConnected)
+            {
+                if (!noInternetShow)
+                {
+                    await ShowDisplayAlert();
+                }
+                return false;
+            }
+            return true;
+        }
+
+        private static async Task ShowDisplayAlert()
+        {
+            noInternetShow = false;
+            await curentPage.DisplayAlert("Device", "No internet Connection on your Device! Try to Reconnect", "Okay");
+            noInternetShow = false;
+        }
+
+
+        //===========================Ends internet conn checking=======================================================
 
     }
 }
