@@ -20,10 +20,6 @@
 
                 <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="true"/>
 
-               <!-- <Label Text="Exam Manager! Exam Schedules on the Go!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />-->
-
                 <Label x:Name="lbl_Username" Text="Email Address"/>
                 <Entry x:Name="entry_Username" Placeholder="Email"/>
                 <Label x:Name="lbl_Password" Text="Password" />

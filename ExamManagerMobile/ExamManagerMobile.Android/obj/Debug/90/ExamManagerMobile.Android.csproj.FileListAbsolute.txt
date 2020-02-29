@@ -32,6 +32,10 @@ G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobi
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\res\mipmap-xxxhdpi\icon.png
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\res\mipmap-xxxhdpi\launcher_foreground.png
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\res\drawable\ball.png
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\res\drawable\exam.jpg
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\res\drawable\exam2.png
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\res\drawable\exammanager.png
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\res\drawable\icon.png
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\R.cs.flag
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\R.txt
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\uploadflags.txt
@@ -103,7 +107,4 @@ G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobi
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\android\assets\Xamarin.Forms.Core.pdb
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\android\assets\Xamarin.Forms.Platform.Android.pdb
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\android\assets\Xamarin.Forms.Xaml.pdb
-G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\res\drawable\exam.jpg
-G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\res\drawable\exam2.png
-G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\res\drawable\exammanager.png
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile.Android\obj\Debug\90\linksrc\ExamManagerMobile.dll.mdb

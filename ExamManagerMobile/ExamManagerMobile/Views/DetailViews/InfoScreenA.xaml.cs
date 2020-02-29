@@ -14,7 +14,13 @@ namespace ExamManagerMobile.Views.DetailViews
 	{
 		public InfoScreenA ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+            Init();
 		}
+
+        void Init()
+        {
+            ActivitySpinner.IsVisible = true;
+        }
 	}
 }

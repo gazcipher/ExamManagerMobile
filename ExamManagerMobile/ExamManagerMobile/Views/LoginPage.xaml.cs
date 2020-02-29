@@ -39,30 +39,44 @@ namespace ExamManagerMobile.Views
             User user = new User(entry_Username.Text, entry_Password.Text);
             if(user.CheckIfValidCreds())
             {
-                DisplayAlert("Login", "Login Succeeded", "Okay");
+                //Activity Spinner
+                ActivitySpinner.IsVisible = true;
                 //Login function should get back a token and the token can be saved using the token db controller
-               // var result = await App.RestService.Login(user); //comment this out to test the dashboard
+                //var result = await App.RestService.Login(user); //comment this out to test the dashboard
+
                 var result = new Token(); //making a dummy token for testing the dashboard
+
+                await DisplayAlert("Login", "Login Succeeded", "Okay");
+
+                if(App.SettingsDatabase.GetSettings() == null)
+                {
+                    Settings settings = new Models.Settings();
+                    App.SettingsDatabase.SaveSettings(settings);
+                }
+
                 //if(result.access_token != null)
                 if(result != null)
                 {
-                   // App.UserDatabase.CommitUser(user);
-                   // App.TokenDatabase.CommitUser(result); //Navigation to dashboard after login
+                    ActivitySpinner.IsVisible = false;
+                    // App.UserDatabase.CommitUser(user);
+                    // App.TokenDatabase.CommitUser(result); //Navigation to dashboard after login
 
                     //await Navigation.PushAsync(new Dashboard());
-                    if(Device.OS == TargetPlatform.Android)
+                    if (Device.OS == TargetPlatform.Android)
                     {
                         //Overriding navigation stack
-                        Application.Current.MainPage = new NavigationPage(new Dashboard());
+                        Application.Current.MainPage = new NavigationPage(new MasterDetail());
+
                     }else if(Device.OS == TargetPlatform.iOS)
                     {
-                        await Navigation.PushModalAsync(new NavigationPage(new Dashboard()));
+                        await Navigation.PushModalAsync(new NavigationPage(new MasterDetail()));
                     }
                 }
             }
             else
             {
-                DisplayAlert("Login", "Login Failed. Invalid Username or Password", "Okay");
+                await DisplayAlert("Login", "Login Failed. Invalid Username or Password", "Okay");
+                ActivitySpinner.IsVisible = false;
             }
 
         }

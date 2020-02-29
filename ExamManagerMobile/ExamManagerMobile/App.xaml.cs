@@ -14,6 +14,10 @@ namespace ExamManagerMobile
     {
         static TokenDBController _tokenDatabase;
         static UserDBController _userDatabase;
+        static SettingsDBController _settingsDatabase;
+
+
+
         static RestService restService; //Injecting the rest service into the app
         private static Label labelScreen;
         private static bool hasInternet;
@@ -66,6 +70,18 @@ namespace ExamManagerMobile
                     _tokenDatabase = new TokenDBController();
                 }
                 return _tokenDatabase;
+            }
+        }
+
+        public static SettingsDBController SettingsDatabase
+        {
+            get
+            {
+                if(_settingsDatabase == null)
+                {
+                    _settingsDatabase = new SettingsDBController();
+                }
+                return _settingsDatabase;
             }
         }
 

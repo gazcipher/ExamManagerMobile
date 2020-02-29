@@ -2375,6 +2375,9 @@ namespace ExamManagerMobile.Droid
 			// aapt resource value: 0x7F010005
 			public const int ExamManager = 2130771973;
 			
+			// aapt resource value: 0x7F010006
+			public const int icon = 2130771974;
+			
 			// aapt resource value: 0x7F090054
 			public const int ic_audiotrack_dark = 2131296340;
 			

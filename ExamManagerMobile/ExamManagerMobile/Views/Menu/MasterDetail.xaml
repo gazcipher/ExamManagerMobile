@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:ExamManagerMobile.Views.Menu;assembly=ExamManagerMobile"
+                  xmlns:detailviews="clr-namespace:ExamManagerMobile.Views.DetailViews;assembly=ExamManagerMobile"
+             x:Class="ExamManagerMobile.Views.Menu.MasterDetail">
+
+    <MasterDetailPage.Master>
+        <local:MasterPage x:Name="masterPage"/>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <detailviews:InfoScreenA />
+            </x:Arguments>
+        </NavigationPage>
+        
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>

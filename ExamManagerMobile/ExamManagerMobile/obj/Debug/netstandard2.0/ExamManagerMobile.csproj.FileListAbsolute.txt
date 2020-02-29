@@ -5,11 +5,14 @@ G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobi
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\Views\DetailViews\InfoScreenA.xaml.g.cs
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\Views\DetailViews\InfoScreenB.xaml.g.cs
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
-G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\Views\Menu\Dashboard.xaml.g.cs
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\Views\Menu\MasterDetail.xaml.g.cs
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\Views\Menu\MasterPage.xaml.g.cs
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\ExamManagerMobile.csproj.CoreCompileInputs.cache
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\ExamManagerMobile.AssemblyInfoInputs.cache
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\ExamManagerMobile.AssemblyInfo.cs
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\XamlC.stamp
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\ExamManagerMobile.dll
 G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\ExamManagerMobile.pdb
+G:\MY_APP_PORTAL\MOBILE-APPS\ExamManagerMobile\ExamManagerMobile\ExamManagerMobile\obj\Debug\netstandard2.0\Views\DetailViews\SettingsViews\SettingsScreen.xaml.g.cs

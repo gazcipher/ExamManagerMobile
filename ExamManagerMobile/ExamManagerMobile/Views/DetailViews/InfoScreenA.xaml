@@ -2,11 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExamManagerMobile.Views.DetailViews.InfoScreenA">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome, List of Exams for Today!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    
+        <StackLayout x:Name="MainLayout">
+        <RelativeLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout x:Name="SubLayout" Orientation="Vertical" VerticalOptions="FillAndExpand" 
+                         RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+                         RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}">
+                
+                <Label Text="Welcome, List of Exams for Today!" VerticalOptions="Center" HorizontalOptions="Center" />
+                
+            </StackLayout>
+
+            <ActivityIndicator IsRunning="true" Color="Red" x:Name="ActivitySpinner" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                               RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.45}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}"/>
+        </RelativeLayout>
+            
+            
         </StackLayout>
-    </ContentPage.Content>
+
 </ContentPage>

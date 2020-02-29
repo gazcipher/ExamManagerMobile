@@ -8,25 +8,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ExamManagerMobile.Views.Menu.Dashboard.xaml", "Views/Menu/Dashboard.xaml", typeof(global::ExamManagerMobile.Views.Menu.Dashboard))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ExamManagerMobile.Views.DetailViews.SettingsView.SettingsScreen.xaml", "Views/DetailViews/SettingsView/SettingsScreen.xaml", typeof(global::ExamManagerMobile.Views.DetailViews.Settings.SettingsScreen))]
 
-namespace ExamManagerMobile.Views.Menu {
+namespace ExamManagerMobile.Views.DetailViews.Settings {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Menu\\Dashboard.xaml")]
-    public partial class Dashboard : global::Xamarin.Forms.ContentPage {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.StackLayout LogoStack;
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\DetailViews\\SettingsView\\SettingsScreen.xaml")]
+    public partial class SettingsScreen : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label lbl_NoInternet;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout MainLayout;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Dashboard));
-            LogoStack = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "LogoStack");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SettingsScreen));
             lbl_NoInternet = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_NoInternet");
+            MainLayout = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "MainLayout");
         }
     }
 }
