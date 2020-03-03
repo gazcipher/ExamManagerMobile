@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamManagerMobile.Views.RegisterPage">
+
+    <StackLayout x:Name="MasterLayout">
+
+        <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand">
+            <Label x:Name="lbl_NoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red"/>
+            <Image x:Name="LoginIcon" Source="ExamManager.png" Margin="0,70,0,0"/>
+        </StackLayout>
+
+        <StackLayout x:Name="RegisterEntriesStack" VerticalOptions="StartAndExpand">
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>20,0,20,0</OnIdiom.Phone>
+                    <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="false"/>
+            <Label Text="Sign Up" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Entry x:Name="entry_Email" Placeholder="Email Address" MaxLength="64"/>
+            <Entry x:Name="entry_Password" Placeholder="Password" MaxLength="64"/>
+            <Entry x:Name="entry_Matric" Placeholder="Matric Number" MaxLength="10"/>
+            <Entry x:Name="entry_Firstname" Placeholder="First Name" MaxLength="32"/>
+            <Entry x:Name="entry_Lastname" Placeholder="Last Name" MaxLength="32"/>
+            <Button x:Name="btn_Register"  Text="Register" Clicked="RegisterProcessing"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Button x:Name="btn_login_page"  Text="Login" Clicked="login_page_btn" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

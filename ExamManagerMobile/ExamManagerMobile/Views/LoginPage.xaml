@@ -10,22 +10,26 @@
             <Image x:Name="LoginIcon" Source="ExamManager.png" Margin="0,100,0,0"/>
         </StackLayout>
    <!-- <ContentPage.Content>-->
-            <StackLayout x:Name="LoginEntriesStack" VerticalOptions="StartAndExpand">
-                <StackLayout.Padding>
-                    <OnIdiom x:TypeArguments="Thickness">
-                        <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
-                        <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
-                    </OnIdiom>
-                </StackLayout.Padding>
+        <StackLayout x:Name="LoginEntriesStack" VerticalOptions="StartAndExpand">
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                    <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+                </OnIdiom>
+            </StackLayout.Padding>
 
-                <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="true"/>
+            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="true"/>
 
-                <Label x:Name="lbl_Username" Text="Email Address"/>
-                <Entry x:Name="entry_Username" Placeholder="Email"/>
-                <Label x:Name="lbl_Password" Text="Password" />
-                <Entry x:Name="entry_Password" Placeholder="Password"/>
-                <Button x:Name="btn_Login"  Text="Sign In" Clicked="LoginProcessing"/>
-            </StackLayout>
-    <!-- </ContentPage.Content>-->
+            <Entry x:Name="entry_Username" Placeholder="Email Address"/>
+            <Label x:Name="ErrorLabel"/>
+            <Entry IsPassword="true" x:Name="entry_Password" Placeholder="Password"/>
+            <Button x:Name="btn_Login"  Text="Sign In" Clicked="LoginProcessing"/>
+        </StackLayout>
+        
+        <StackLayout>
+            <Button x:Name="btn_register_page"  Text="Register" Clicked="regiser_page_btn" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <!-- </ContentPage.Content>-->
     </StackLayout>
 </ContentPage>

@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>5.7" Marshmallow %286.0.0%29 XHDPI Phone</SelectedDevice>
     <DefaultDevice>5.7" Marshmallow %286.0.0%29 XHDPI Phone</DefaultDevice>
+    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

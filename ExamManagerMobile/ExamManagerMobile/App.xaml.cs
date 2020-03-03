@@ -1,4 +1,5 @@
 ﻿using ExamManagerMobile.Data;
+using ExamManagerMobile.Data.Services;
 using ExamManagerMobile.Models;
 using ExamManagerMobile.Views;
 using System;
@@ -27,12 +28,16 @@ namespace ExamManagerMobile
         private static Timer timer;
         private static bool noInternetShow;
 
+       // IUserRepository userRepository;
+
         public App()
         {
             InitializeComponent();
 
            // MainPage = new MainPage();
             MainPage = new LoginPage();
+
+           // userRepository = RestService.For<IUserRepository>("https://e-manager.azurewebsites.net");
         }
 
         protected override void OnStart()

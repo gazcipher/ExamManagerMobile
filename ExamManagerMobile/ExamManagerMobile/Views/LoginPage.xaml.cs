@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -23,8 +24,7 @@ namespace ExamManagerMobile.Views
         void Init()
         {
             BackgroundColor = Constants.BackgroundColor;
-            lbl_Username.TextColor = Constants.MainTextColor;
-            lbl_Password.TextColor = Constants.MainTextColor;
+            //lbl_Password.TextColor = Constants.MainTextColor;
             ActivitySpinner.IsVisible = false;
             LoginIcon.HeightRequest = Constants.LoginIconHeight;
 
@@ -36,13 +36,26 @@ namespace ExamManagerMobile.Views
         }
         async void LoginProcessing(object sender, EventArgs e)
         {
+            //email validation
+            var loginEmail = entry_Username.Text;
+        
             User user = new User(entry_Username.Text, entry_Password.Text);
+
+
             if(user.CheckIfValidCreds())
             {
                 //Activity Spinner
                 ActivitySpinner.IsVisible = true;
                 //Login function should get back a token and the token can be saved using the token db controller
                 //var result = await App.RestService.Login(user); //comment this out to test the dashboard
+
+                if (!Regex.IsMatch(loginEmail, @"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
+                                               @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-0-9a-z]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$",
+                                               RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250)))
+                {
+                    ErrorLabel.Text = "Invalid Email Address, Please check your email!";
+                    return;
+                }
 
                 var result = new Token(); //making a dummy token for testing the dashboard
 
@@ -78,7 +91,16 @@ namespace ExamManagerMobile.Views
                 await DisplayAlert("Login", "Login Failed. Invalid Username or Password", "Okay");
                 ActivitySpinner.IsVisible = false;
             }
-
         }
+
+        void regiser_page_btn(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new NavigationPage(new RegisterPage());
+        }
+
+
+
+
+
     }
 }
